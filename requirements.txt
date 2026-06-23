@@ -7,3 +7,6 @@ uvicorn
 streamlit
 requests
 openpyxl
+pytest
+httpx
+mlflow

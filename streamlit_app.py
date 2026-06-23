@@ -202,10 +202,7 @@ if st.button("Tester l'API"):
 
     st.progress(min(probability / 100, 1.0))
 
-    st.write(
-        f"Prédiction du modèle : {result['prediction']}"
-    )
-
+    
     if probability >= 40:
 
         st.error(

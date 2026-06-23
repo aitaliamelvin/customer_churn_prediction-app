@@ -14,6 +14,21 @@ Le projet couvre l'ensemble du cycle de vie d'un modèle de Machine Learning :
 * Évaluation des performances
 * Déploiement via FastAPI
 * Interface utilisateur avec Streamlit
+---
+
+## Application
+
+### Interface Streamlit
+
+![Streamlit](reports/screenshots/streamlit_form.png)
+
+### Prédiction
+
+![Prediction](reports/screenshots/streamlit_prediction.png)
+
+### API FastAPI
+
+![Swagger](reports/screenshots/swagger_predict.png)
 
 ---
 
@@ -98,15 +113,30 @@ Le modèle retenu est la régression logistique.
 
 ## Résultats
 
-Performances du modèle :
+| Métrique  | Score |
+| --------- | ----- |
+| Accuracy  | 0.80  |
+| Precision | 0.65  |
+| Recall    | 0.57  |
+| F1 Score  | 0.61  |
+| ROC AUC   | 0.85  |
 
-* Accuracy : 0.80
-* Precision : 0.65
-* Recall : 0.57
-* F1 Score : 0.61
-* ROC AUC : 0.85
 
 Le modèle permet d'identifier efficacement les clients présentant un risque élevé de départ.
+
+---
+
+## Enseignements métier
+
+L'analyse exploratoire a permis d'identifier plusieurs facteurs influençant le départ des clients :
+
+* Les clients avec un contrat mensuel (Month-to-month) présentent un risque de résiliation beaucoup plus élevé.
+* Les clients ayant une ancienneté importante restent généralement plus fidèles.
+* La présence d'un support technique est associée à un taux de churn plus faible.
+* Les clients utilisant la fibre optique semblent plus susceptibles de quitter l'entreprise.
+* Certains modes de paiement, notamment l'Electronic Check, sont davantage associés au churn.
+
+Ces observations peuvent aider une entreprise de télécommunications à cibler plus efficacement ses actions de fidélisation.
 
 ---
 
