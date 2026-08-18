@@ -91,7 +91,7 @@ st.markdown(
 # 3. API URL
 # ==============================
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "http://https://customer-churn-prediction-app-a18v.onrender.com/predict"
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_PATH = BASE_DIR / "data" / "raw" / "Telco_customer_churn.xlsx"
